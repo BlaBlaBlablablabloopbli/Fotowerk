@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Quellcode entpacken
+        run: unzip -o fotowerk_quelle.zip
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
